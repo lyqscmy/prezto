@@ -38,14 +38,18 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'fasd' \
+  'autosuggestions' \
+  'git'
 
 #
 # Autosuggestions
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions' color 'yes'
 
 #
 # Completions

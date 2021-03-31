@@ -5,9 +5,18 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+setopt clobber
+
+unsetopt correct_all
 # Customize to your needs...
+alias vi="nvim"
+alias tig="gitui"
+export PATH="/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+PATH="$HOME/.cargo/bin:$PATH"
+PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
